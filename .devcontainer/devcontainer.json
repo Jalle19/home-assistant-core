@@ -14,7 +14,8 @@
   "appPort": ["8123:8123", "5683:5683/udp"],
   "runArgs": ["-e", "GIT_EDITOR=code --wait"],
   "mounts": [
-    "source=${localEnv:HOME}/Projects/ha-extron/custom_components/extron,target=${containerWorkspaceFolder}/config/custom_components/extron,type=bind"
+     "source=${localEnv:HOME}/Projects/ha-extron/custom_components/extron,target=${containerWorkspaceFolder}/config/custom_components/extron,type=bind",
+     "source=${localEnv:HOME}/Projects/ha-vinx/custom_components/vinx,target=${containerWorkspaceFolder}/config/custom_components/vinx,type=bind"
   ],
   "customizations": {
     "vscode": {
